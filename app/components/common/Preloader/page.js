@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
-import preload from "./1474.svg"
-import Image from "next/image";
+
 
 //Анимация загрузки
 
@@ -11,7 +10,9 @@ const Preloader = () => {
     animate={{ scale: 1, opacity: 1 }}
     transition={{ type: "spring", stiffness: 300, damping: 15 }}
     >
-      <Image className="preloader" alt="PRELOADER" src={preload}></Image>
+  <div className="preloader">
+      <div className="spinner"></div>
+    </div>
     </motion.div>
   );
 };
