@@ -1,0 +1,104 @@
+.header {
+  border-bottom: 1px solid rgb(202, 202, 202);
+  background-color: white;
+
+  &__row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 110px;
+  }
+
+  &__title {
+    color: #121723;
+    font-family: "Russo One";
+    font-size: 42px;
+    font-weight: 400;
+    line-height: 78.188%;
+    max-width: 217px;
+  }
+
+  &__auth {
+    font-size: 42px;
+    background-color: white;
+    margin: 0;
+    &:first-child {
+      margin-right: 24px;
+    }
+  }
+
+  &__auth-nav {
+  }
+
+  &__username {
+    font-size: 24px;
+    text-align: right;
+  }
+
+  &__auth-block {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+
+    &-item {
+      & a {
+        color: #000;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: normal;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 530px) {
+  .header__list {
+    display: none;
+  }
+}
+
+@media (max-width: 625px) {
+  .header {
+    &__title {
+      font-size: 36px;
+    }
+
+    &__auth {
+
+      &:first-child {
+        margin-right: 0px;
+      }
+    }
+
+    &__auth-block {
+      display: flex;
+      gap: 0px;
+      align-items: center;
+      flex-direction: column;
+    }
+  }
+}
+
+@media (max-width: 650px) {
+  .header__auth {
+    font-size: 32px;
+  }
+
+  .header{}
+
+  .header__auth-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+}

@@ -1,0 +1,126 @@
+.sneaker{
+    padding: 32px 0px;
+
+
+    &__column{
+        display: flex;
+        padding: 48px;
+        flex-direction: column;
+        gap: 24px;
+        background-color: white;
+        border-radius: 50px;
+    }
+
+
+    &__photo{
+        max-width: 100%;
+    }
+
+    &__title{
+        color:black;
+        font-size: 48px;
+        font-weight: 400;
+        line-height: 100%;
+    }
+
+    &__subtitle{
+        color: black;
+        font-size: 36px;
+        font-weight: 400;
+        line-height: 100%;
+    }
+
+    &__info{
+        display: flex;
+        gap: 32px;
+    }
+
+    &__description{
+        color: black;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 28px; 
+        max-width: 506px;
+    }
+
+    &__add-to-cart{
+        font-size: 24px;
+        padding: 15px;
+        border-radius: 15px;
+        background-color: rgb(244, 244, 244);
+    }
+
+    &__feature{
+        display: flex;
+        gap: 24px;
+        flex-direction: column;
+        width: 100%;
+        &-title{
+            color: black;
+            font-size: 30px;
+            font-weight: 400;
+            line-height: normal;
+        }
+        &-line{
+            height: 1px;
+            background-color: black;
+        }
+        &-info{
+            display: flex;
+            justify-content: space-between;
+            &-title{
+                color: black;
+                font-size: 20px;
+                font-weight: 400;
+                line-height: normal;
+            }
+
+            &-subtitle{
+                color: black;
+                text-align: right;
+                font-size: 20px;
+                font-weight: 400;
+                line-height: normal;
+            }
+        }
+    }
+}
+
+
+
+
+@media (max-width: 980px){
+    .sneaker__info {
+        flex-direction: column;
+        align-items: center;
+    }
+    .sneaker__description {
+        max-width: none;
+    }
+}
+
+@media (max-width: 530px){
+
+    .sneaker__column{
+        border-radius: 12px;
+        padding: 24px;
+    }
+    .sneaker__title{
+        font-size: 32px;
+    }
+    .sneaker__subtitle{
+        font-size: 20px;
+    }
+    .sneaker__description{
+        font-size: 20px;
+    }
+    .sneaker__feature-title{
+        font-size: 24px;
+    }
+    .sneaker__feature-info-title{
+        font-size: 16px;
+    }
+    .sneaker__feature-info-subtitle{
+        font-size: 16px;
+    }
+}
