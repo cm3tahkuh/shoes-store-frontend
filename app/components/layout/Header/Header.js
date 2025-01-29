@@ -20,8 +20,6 @@ const Header = () => {
     <header className="header">
       <div className="container">
         <motion.div
-          whileHover={{ x: [-10, 10, -10] }}
-          transition={{ repeat: Infinity, duration: 1.2, ease: "easeInOut" }}
           className="header__row"
         >
           <Link href="/" className="header__title">
