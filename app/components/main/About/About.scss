@@ -1,0 +1,60 @@
+.about {
+    background-color: #f0f8ff; // Светлый фон
+    padding: 60px 0;
+    text-align: center;
+
+
+
+    .about-content {
+        background: #fff;
+        padding: 40px;
+        border-radius: 8px;
+        display: flex;
+        flex-direction: column;
+        gap: 96px;
+
+        .about__text-block {
+            margin-bottom: 40px;
+
+            &:nth-child(2n) {
+                text-align: right;
+            }
+
+            text-align: left;
+
+
+
+            .about-title {
+                font-size: 4rem;
+                font-weight: 600;
+                color: #2a2a2a;
+                margin-bottom: 20px;
+                text-transform: uppercase;
+                line-height: -1;
+                letter-spacing: -2px;
+            }
+
+            .about-description {
+                font-size: 1.5rem;
+                color: #6c757d;
+                font-weight: 500;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .about {
+        .about-content {
+            padding: 30px;
+        }
+
+        .about-title {
+            font-size: 2.5rem;
+        }
+
+        .about-description {
+            font-size: 1.25rem;
+        }
+    }
+}

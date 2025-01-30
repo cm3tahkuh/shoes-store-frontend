@@ -33,7 +33,8 @@ const Products = () => {
   return (
     <motion.main
     initial={{ scale: 0.5, opacity: 0 }}
-    animate={{ scale: 1, opacity: 1 }}
+    whileInView={{ scale: 1, opacity: 1 }}
+    viewport={{ once: true }}  
     transition={{ type: "spring", stiffness: 300, damping: 15 }}
       className="main"
     >

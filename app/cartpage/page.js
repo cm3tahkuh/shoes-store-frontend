@@ -7,6 +7,10 @@ import "./cartpage.scss";
 
 //Раздел "Корзина"
 
+const TOKEN_API = process.env.NEXT_PUBLIC_TOKEN_API;
+alert(TOKEN_API)
+
+
 const CartPage = () => {
   
   const { cart, removeFromCart, sendOrderToTelegram } = useCart();

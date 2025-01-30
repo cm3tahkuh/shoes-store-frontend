@@ -8,7 +8,7 @@ import { endpoints } from '../../config';
 export async function GET() {
  
   const TOKEN_API = process.env.NEXT_PUBLIC_TOKEN_API;
-  
+
   try {
 
     const response = await axios.get(endpoints.products, {
