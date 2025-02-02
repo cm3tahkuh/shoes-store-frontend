@@ -17,6 +17,7 @@ const Products = () => {
       try {
         const response = await fetch("/api/Products/getAllProducts");
         const data = await response.json();
+        console.log(data)
         setData(data);
       } catch (error) {
         console.error("Ошибка при запросе:", error);

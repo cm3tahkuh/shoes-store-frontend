@@ -11,13 +11,13 @@ export async function GET() {
 
   try {
 
-    const response = await axios.get(endpoints.products, {
+    const response = await axios.get(endpoints.collections, {
       headers: {
         Authorization: `Bearer ${TOKEN_API}`,
       },
     });
     
-
+    console.log(response.data.data)
     return new Response(JSON.stringify(response.data.data), {
       status: 200,
     });
