@@ -80,7 +80,7 @@ const About = () => {
             </div>
             <div className="about__image-block">
               <img
-                src="https://www.golfposer.com/media/catalog/product/n/i/nike-golf-shoes-air-jordan-1-high-g-university-blue-2024-dq0660-400.jpg?optimize=medium&bg-color=255,255,255&fit=bounds&height=700&width=700&canvas=700:700"
+                src="https://i.imgur.com/IMNZJes.png"
                 alt="Sneakers"
                 className="sneaker-image"
               />
